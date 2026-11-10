@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "title": "Gem Scatter",
+  "concept": "if statements",
+  "description": "Gems are scattered along the path. Collect them only when you're standing on one — use if!",
+  "hint": "if (onGem()) { collectGem(); } inside your movement loop.",
+  "grid": [
+    "S*.*.*.*G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": true,
+  "maxSteps": 100,
+  "starterCode": "// Move along the path and collect any gems you find\nwhile (!atGoal()) {\n  if (onGem()) {\n    collectGem();\n  }\n  moveForward();\n}\n"
+}

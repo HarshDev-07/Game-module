@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeBot Quest 🤖</title>
+  <script type="module" crossorigin src="/codebot-quest/assets/index-CHxfgQoU.js"></script>
+  <link rel="stylesheet" crossorigin href="/codebot-quest/assets/index-C7Nlzwtg.css">
+</head>
+<body>
+  <div id="app">
+    <!-- ===== TOP TOOLBAR ===== -->
+    <header id="toolbar">
+      <div id="toolbar-left">
+        <span id="logo">🤖 CodeBot Quest</span>
+        <button id="btn-level-select" title="Choose a level">📋 Levels</button>
+      </div>
+      <div id="toolbar-center">
+        <span id="level-title">Level 1 — First Steps</span>
+        <span id="concept-badge">Sequencing</span>
+      </div>
+      <div id="toolbar-right">
+        <button id="btn-mute" title="Toggle sound">🔊</button>
+        <span id="step-counter">Steps: 0</span>
+      </div>
+    </header>
+
+    <!-- ===== MAIN AREA ===== -->
+    <div id="main">
+      <!-- Left: 3D scene -->
+      <div id="scene-panel">
+        <canvas id="three-canvas"></canvas>
+        <div id="scene-overlay">
+          <div id="star-rating" class="hidden"></div>
+        </div>
+      </div>
+
+      <!-- Right: code panel -->
+      <div id="code-panel">
+        <!-- Level info -->
+        <div id="level-info">
+          <p id="level-desc">Write code to move the robot to the goal.</p>
+          <button id="btn-hint" title="Show hint">💡 Hint</button>
+        </div>
+        <div id="hint-box" class="hidden"></div>
+
+        <!-- Code editor -->
+        <div id="editor-wrap">
+          <div id="editor"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div id="action-buttons">
+          <button id="btn-run" class="btn-primary">▶ Run</button>
+          <button id="btn-reset">↺ Reset</button>
+        </div>
+
+        <!-- Message area -->
+        <div id="message-area">
+          <div id="message-box" class="hidden"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== LEVEL SELECT MODAL ===== -->
+    <div id="modal-overlay" class="hidden">
+      <div id="level-modal">
+        <div id="modal-header">
+          <h2>Choose a Level</h2>
+          <button id="modal-close">✕</button>
+        </div>
+        <div id="level-grid"></div>
+      </div>
+    </div>
+
+    <!-- ===== WIN / FAIL OVERLAY ===== -->
+    <div id="result-overlay" class="hidden">
+      <div id="result-card">
+        <div id="result-emoji"></div>
+        <h2 id="result-title"></h2>
+        <p id="result-message"></p>
+        <div id="result-stars"></div>
+        <div id="result-buttons">
+          <button id="btn-retry">↺ Try Again</button>
+          <button id="btn-next" class="btn-primary hidden">Next Level →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CONFETTI CANVAS ===== -->
+    <canvas id="confetti-canvas"></canvas>
+  </div>
+
+</body>
+</html>

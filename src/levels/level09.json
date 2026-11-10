@@ -1,0 +1,21 @@
+{
+  "id": 9,
+  "title": "Walk in Squares",
+  "concept": "Functions",
+  "description": "The robot needs to walk a square path repeatedly. Write a function called walkSquare() and call it!",
+  "hint": "function walkSquare() { for 4 times: moveForward, turnRight }",
+  "grid": [
+    "S.....G",
+    ".......",
+    ".......",
+    ".......",
+    ".......",
+    ".......",
+    "......."
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 200,
+  "starterCode": "// Define a function that walks one square\nfunction walkSquare(size) {\n  for (let i = 0; i < 4; i++) {\n    for (let j = 0; j < size; j++) {\n      moveForward();\n    }\n    turnRight();\n  }\n}\n\n// Call it!\nwalkSquare(2);\n// Now move to the goal\nmoveForward();\nmoveForward();\nmoveForward();\nmoveForward();\nmoveForward();\n"
+}

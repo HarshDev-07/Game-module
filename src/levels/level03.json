@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "title": "Gem Collector",
+  "concept": "Sequencing",
+  "description": "Collect the gem on your way to the goal. Stand on the gem and call collectGem().",
+  "hint": "Move to the gem, call collectGem(), then continue to the goal.",
+  "grid": [
+    "S..*..G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": true,
+  "maxSteps": 50,
+  "starterCode": "// Move to the gem, collect it, then reach the goal\nmoveForward();\nmoveForward();\nmoveForward();\ncollectGem(); // Pick up the gem!\n// Now continue to the goal\n"
+}

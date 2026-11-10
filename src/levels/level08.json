@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "title": "Wall or No Wall",
+  "concept": "if/else",
+  "description": "There's a wall somewhere ahead. Use if/else to either move forward or turn around it.",
+  "hint": "if (isPathClear()) { moveForward(); } else { turnRight(); }",
+  "grid": [
+    "S..#...",
+    ".......",
+    "......G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 100,
+  "starterCode": "// Navigate around the wall using if/else\nwhile (!atGoal()) {\n  if (isPathClear()) {\n    moveForward();\n  } else {\n    // Wall ahead! Turn to avoid it\n    turnRight();\n  }\n}\n"
+}

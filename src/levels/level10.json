@@ -1,0 +1,19 @@
+{
+  "id": 10,
+  "title": "The Final Maze",
+  "concept": "Combined",
+  "description": "The ultimate challenge! Navigate a maze, collect all gems, and reach the goal. Use everything you know.",
+  "hint": "Use while, if/else, functions, and loops. Check isPathClear(), onGem(), and atGoal().",
+  "grid": [
+    "S.#.*..#.",
+    "..#.#..#.",
+    "....#....",
+    "#.###.##.",
+    "#...*..*G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": true,
+  "maxSteps": 500,
+  "starterCode": "// The final challenge! Use all your skills.\n// Hint: explore the maze step by step\n\nfunction tryMove() {\n  if (isPathClear()) {\n    moveForward();\n    if (onGem()) collectGem();\n    return true;\n  }\n  return false;\n}\n\n// Write your maze-solving code here!\nwhile (!atGoal()) {\n  if (!tryMove()) {\n    turnRight();\n  }\n}\n"
+}

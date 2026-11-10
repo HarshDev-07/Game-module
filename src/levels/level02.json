@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "title": "Around the Corner",
+  "concept": "Sequencing",
+  "description": "The goal is around a corner. Use turnRight() or turnLeft() to change direction!",
+  "hint": "Move forward, then turn, then move forward again to reach the goal.",
+  "grid": [
+    "S...",
+    "....",
+    "...G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 50,
+  "starterCode": "// Move forward then turn to reach the corner goal\nmoveForward();\n// Now turn and keep going!\n"
+}

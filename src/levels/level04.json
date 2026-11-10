@@ -1,0 +1,15 @@
+{
+  "id": 4,
+  "title": "Long Corridor",
+  "concept": "for loops",
+  "description": "The goal is far away. Instead of calling moveForward() 10 times, use a for loop!",
+  "hint": "for (let i = 0; i < 10; i++) { moveForward(); }",
+  "grid": [
+    "S.........G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 50,
+  "starterCode": "// Don't repeat yourself! Use a for loop\nfor (let i = 0; i < 10; i++) {\n  moveForward();\n}\n"
+}

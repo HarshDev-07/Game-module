@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "title": "Staircase",
+  "concept": "for loops",
+  "description": "Navigate a staircase pattern. Each step: move forward, then turn right, move, turn left. Use a loop!",
+  "hint": "Loop 3 times: move, turnRight, move, turnLeft, move.",
+  "grid": [
+    "S.#####",
+    "..#####",
+    ".....##",
+    "#....##",
+    "#....G#",
+    "#######"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 100,
+  "starterCode": "// Navigate the staircase using a loop\nfor (let step = 0; step < 3; step++) {\n  moveForward();\n  // Add turns and moves here!\n}\n"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "title": "Unknown Distance",
+  "concept": "while loops",
+  "description": "You don't know how far the goal is. Use a while loop to keep moving until you reach it!",
+  "hint": "while (!atGoal()) { moveForward(); }",
+  "grid": [
+    "S........G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 200,
+  "starterCode": "// Keep moving until you reach the goal!\nwhile (!atGoal()) {\n  moveForward();\n}\n"
+}

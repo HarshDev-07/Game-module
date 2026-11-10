@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "title": "First Steps",
+  "concept": "Sequencing",
+  "description": "The robot needs to walk straight to the goal. Write code to get there!",
+  "hint": "Call moveForward() once for each tile between the robot and the goal.",
+  "grid": [
+    "S....G"
+  ],
+  "legend": { "S": "start", "G": "goal", ".": "floor", "#": "wall", "*": "gem" },
+  "startDirection": "east",
+  "requireAllGems": false,
+  "maxSteps": 50,
+  "starterCode": "// Move the robot to the goal!\n// Call moveForward() to move one tile\nmoveForward();\n"
+}

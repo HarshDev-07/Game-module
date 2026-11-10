@@ -1,0 +1,25 @@
+{
+  "name": "codebot-quest",
+  "version": "1.0.0",
+  "description": "A 3D coding game where students write real JavaScript to guide a robot",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.34.3",
+    "codemirror": "^6.0.1",
+    "three": "^0.168.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.9",
+    "vitest": "^2.1.4"
+  }
+}
